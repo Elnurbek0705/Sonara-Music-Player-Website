@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Sonara"
+version = "1.0.0"
+id = "artifacts/sonara-landing"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24803
+
+[services.development]
+run = "pnpm --filter @workspace/sonara-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sonara-landing", "run", "build" ]
+publicDir = "artifacts/sonara-landing/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24803"
+BASE_PATH = "/"
