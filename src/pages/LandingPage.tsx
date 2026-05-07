@@ -445,12 +445,13 @@ export default function LandingPage() {
             <motion.div whileHover={{ scale: 1.03 }} style={{ display: "inline-block", background: "rgba(200,137,58,0.1)", border: "1px solid rgba(200,137,58,0.2)", color: "#c8893a", fontSize: 12, padding: "5px 14px", borderRadius: 20, marginBottom: "1.5rem", letterSpacing: 0.5 }}>
               Sonara v0.1.0
             </motion.div>
-            <motion.button whileHover={{ scale: 1.02, background: "#e09a45" }} whileTap={{ scale: 0.98 }}
-              onClick={() => alert("Download URL ni bu yerga qo'ying")}
-              style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, background: "#c8893a", color: "#0a0a0f", fontSize: 16, fontWeight: 600, padding: "15px 24px", borderRadius: 10, border: "none", cursor: "pointer", width: "100%", fontFamily: "'Inter', sans-serif" }}
+            <motion.a whileHover={{ scale: 1.02, background: "#e09a45" }} whileTap={{ scale: 0.98 }}
+              href="/Sonara_0.1.0_x64-setup.exe"
+              download
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, background: "#c8893a", color: "#0a0a0f", fontSize: 16, fontWeight: 600, padding: "15px 24px", borderRadius: 10, border: "none", cursor: "pointer", width: "100%", fontFamily: "'Inter', sans-serif", textDecoration: "none" }}
             >
               <Download size={18} strokeWidth={2} /> {tl(T.dlBtn, lang)}
-            </motion.button>
+            </motion.a>
             <div style={{ fontSize: 12, color: "#444", marginTop: "0.75rem" }}>{tl(T.dlSize, lang)}</div>
             <div style={{ marginTop: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #222", display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap", fontSize: 12, color: "#555" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 5 }}><MonitorSpeaker size={12} /> Windows 10 / 11</span>
