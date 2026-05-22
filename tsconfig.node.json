@@ -1,0 +1,1 @@
+﻿{"compilerOptions":{"composite":true,"module":"ESNext","moduleResolution":"Node","target":"ES2020","lib":["ESNext"],"types":["node"],"allowSyntheticDefaultImports":true,"isolatedModules":true},"include":["vite.config.ts"]}
