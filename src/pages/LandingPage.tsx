@@ -446,7 +446,7 @@ export default function LandingPage() {
               Sonara v0.1.0
             </motion.div>
             <motion.a whileHover={{ scale: 1.02, background: "#e09a45" }} whileTap={{ scale: 0.98 }}
-              href="/Sonara_0.1.0_x64-setup.exe"
+              href="/Sonara_0.1.0_x64-setup.msi"
               download
               style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, background: "#c8893a", color: "#0a0a0f", fontSize: 16, fontWeight: 600, padding: "15px 24px", borderRadius: 10, border: "none", cursor: "pointer", width: "100%", fontFamily: "'Inter', sans-serif", textDecoration: "none" }}
             >
