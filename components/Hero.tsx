@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Music2, Download, Github, MonitorSpeaker, Package, ShieldCheck } from "lucide-react";
 import { Lang, ThemeKey } from "@/lib/types";
-import { T, tl, DOWNLOAD_URL, GITHUB_URL } from "@/lib/data";
+import { T, tl, GITHUB_URL } from "@/lib/data";
 import Player3D from "./Player3D";
 
 const fadeUp = {
