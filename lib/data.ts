@@ -164,6 +164,11 @@ export const T = {
     ru: "Скачать для Windows",
     en: "Download for Windows",
   },
+  dlBadge: {
+    uz: "Sonara — Eng so'nggi versiya",
+    ru: "Sonara — Последняя версия",
+    en: "Sonara — Latest version",
+  },
   dlSize: {
     uz: "Windows uchun .exe · ~30 MB",
     ru: "Установщик .exe для Windows · ~30 МБ",

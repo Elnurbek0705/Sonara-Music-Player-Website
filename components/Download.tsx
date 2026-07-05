@@ -68,7 +68,7 @@ const Download = forwardRef<HTMLElement, { lang: Lang }>(({ lang }, ref) => {
             whileHover={{ scale: 1.03 }}
             className="inline-block bg-[rgba(200,137,58,0.1)] border border-[rgba(200,137,58,0.2)] text-accent text-xs px-3.5 py-1.5 rounded-full mb-6 tracking-wide"
           >
-            Sonara — Eng so&apos;nggi versiya
+            {tl(T.dlBadge, lang)}
           </motion.div>
           <motion.button
             whileHover={{ scale: 1.02, background: "#e09a45" }}
