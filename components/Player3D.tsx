@@ -65,6 +65,11 @@ export default function Player3D({
     stiffness: 120,
     damping: 20,
   });
+  const glareBackground = useTransform(
+    [glowX, glowY],
+    ([gx, gy]) =>
+      `radial-gradient(circle at ${gx}% ${gy}%, rgba(255,255,255,0.08) 0%, transparent 60%)`,
+  );
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (isTouch) return;
@@ -120,13 +125,7 @@ export default function Player3D({
         {!isTouch && (
           <motion.div
             className="absolute inset-0 pointer-events-none z-10 rounded-2xl"
-            style={{
-              background: useTransform(
-                [glowX, glowY],
-                ([gx, gy]) =>
-                  `radial-gradient(circle at ${gx}% ${gy}%, rgba(255,255,255,0.08) 0%, transparent 60%)`,
-              ),
-            }}
+            style={{ background: glareBackground }}
           />
         )}
 
